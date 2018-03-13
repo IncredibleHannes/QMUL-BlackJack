@@ -11,24 +11,43 @@
 #ifndef CARD_H_
 #define CARD_H_
 
-#include "Face.h"
-#include "Suite.h"
+#include <memory>
+#include "CardProperty.h"
 
-class Card {
+class CardBase {
+
+};
+
+
+template <typename FACE, typename SUITE>
+class Card : public CardBase {
+static_assert(std::is_base_of<CardProperty, FACE>::value, "FACE parameter not derived from Face");
+static_assert(std::is_base_of<CardProperty, SUITE>::value, "SUITE parameter not derived from Suite");
 public:
-  Card(Face f, Suite s)
-    : face(f), suite(s) {};
-  Card(const Card &other);
+  Card() : face(FACE()), suite(SUITE()) { };
 
-  Face getFace() {return this->face;};
-  Suite getSuite() {return this->suite;};
-  void incFace();
-  void incSuite();
-  bool operator!=(const Card& toCompare) const;
+  Card(FACE f, SUITE s) {
+    this->face = f;
+    this->suite = s;
+  };
+
+  Card(const Card<FACE,SUITE> &other) {
+    this->face = other.face;
+    this->suite = other.suite;
+  };
+
+  FACE getFace() {return *this->face;};
+  SUITE getSuite() {return *this->suite;};
+
+  void incFace() { face.inc(); };
+  void incSuite() { suite.inc(); };
+
+  bool operator!=(const Card& toCompare) const {
+    return !(this->face == toCompare.face && this->suite == toCompare.suite);
+  };
 
 private:
-  Face face;
-  Suite suite;
-
+  FACE face;
+  SUITE suite;
 };
 #endif

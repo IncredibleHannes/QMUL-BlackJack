@@ -4,7 +4,7 @@ BIN = build
 SRC = $(shell find src/ -name *.cpp)
 OBJ = $(SRC:%.cpp=build/%.o)
 
-INCLUDE = -Isrc/Model -Isrc/Controller -Isrc/View -Isrc/Model/CardGameLibrary -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+INCLUDE = -Isrc/Model -Isrc/Controller -Isrc/View -Isrc/Model/CardGameLibrary -Isrc/Model/CardGameLibrary/ShuffleAlgorithms -Isrc/Model/CardGameLibrary/FrenchCards
 
 APP = main
 
