@@ -1,5 +1,7 @@
 
--Isrc/Model/Chessman
+-Isrc/Model/CardGameLibrary/FrenchCards
+-Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+-Isrc/Model/CardGameLibrary
 -Isrc/Model
 -Isrc/View
 -Isrc
