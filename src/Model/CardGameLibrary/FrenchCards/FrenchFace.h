@@ -5,6 +5,9 @@
 
 class FrenchFace : public CardProperty {
 public:
+  enum Face{
+    Ace, Two, Tree, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King
+  };
   FrenchFace() = default;
   FrenchFace(const FrenchFace& other);
   virtual void inc();
@@ -12,5 +15,6 @@ public:
   virtual int getValue() const;
 private:
   virtual bool doCompare(const CardProperty& face) const;
+  Face face;
 };
 #endif

@@ -5,6 +5,7 @@
 
 class FrenchSuite : public CardProperty {
 public:
+  enum Suite { Dimond, Heart, Sades, Clubs };
   FrenchSuite() = default;
   FrenchSuite(const FrenchSuite& other);
   virtual void inc();
@@ -12,5 +13,6 @@ public:
   virtual int getValue() const;
 private:
   virtual bool doCompare(const CardProperty& suite) const;
+  Suite suite;
 };
 #endif
