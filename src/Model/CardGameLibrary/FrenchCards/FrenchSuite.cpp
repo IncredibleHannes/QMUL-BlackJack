@@ -1,15 +1,17 @@
 #include "FrenchSuite.h"
 
-FrenchSuite::FrenchSuite(const FrenchSuite& other) {
-
-}
+FrenchSuite::FrenchSuite(const FrenchSuite& other)
+  : suite(other.suite) { }
 
 void FrenchSuite::inc() {
-  return;
+  if (this->suite == Clubs) {
+    this->suite = Diamond;
+  } else {
+    this->suite = static_cast<Suite>(this->suite + 1);
+  }
 }
 
 bool FrenchSuite::doCompare(const CardProperty& toCompare) const {
-  return true; // TODO: fix this
   const FrenchSuite *tC = dynamic_cast<const FrenchSuite*>(&toCompare);
   if (tC == nullptr)
     return false;
@@ -17,7 +19,13 @@ bool FrenchSuite::doCompare(const CardProperty& toCompare) const {
 }
 
 std::string FrenchSuite::getName() const {
-  return "test";
+  switch (suite) {
+    case Diamond: return "Diamond";
+    case Heart: return "Heart";
+    case Sades: return "Sades";
+    case Clubs: return "Clubs";
+  }
+  return "";
 }
 
 int FrenchSuite::getValue() const {

@@ -16,8 +16,12 @@ public:
     Card<FACE,SUITE> firstCard = Card<FACE,SUITE>();
     Card<FACE,SUITE> tmpCard = Card<FACE,SUITE>(firstCard);
     do {
-      tmpCard.incFace();
-      this->cards.push_back(static_cast<CardBase*>(new Card<FACE,SUITE>(tmpCard)));
+      Card<FACE,SUITE> tmpCard2 = Card<FACE,SUITE>(tmpCard);
+      do {
+        tmpCard.incFace();
+        this->cards.push_back(static_cast<CardBase*>(new Card<FACE,SUITE>(tmpCard)));
+      } while(tmpCard != tmpCard2);
+      tmpCard.incSuite();
     } while(firstCard != tmpCard);
   }
 

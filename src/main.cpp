@@ -13,7 +13,7 @@ int main(int argc, char const *argv[]) {
   while(!d.isEmpty()) {
     Card<FrenchFace, FrenchSuite> tmp = d.getTop();
     d.popTop();
-    std::cout <<tmp.getFace().getName() << std::endl;
+    std::cout << tmp.getFace().getName() << " : " << tmp.getSuite().getName() << std::endl;
   }
   return 0;
 }

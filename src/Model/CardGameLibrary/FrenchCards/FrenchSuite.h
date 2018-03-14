@@ -5,7 +5,7 @@
 
 class FrenchSuite : public CardProperty {
 public:
-  enum Suite { Dimond, Heart, Sades, Clubs };
+  enum Suite { Diamond, Heart, Sades, Clubs };
   FrenchSuite() = default;
   FrenchSuite(const FrenchSuite& other);
   virtual void inc();
