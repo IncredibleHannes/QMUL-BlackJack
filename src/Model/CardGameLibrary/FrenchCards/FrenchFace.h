@@ -8,7 +8,7 @@ public:
   enum Face{
     Ace, Two, Tree, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King
   };
-  FrenchFace() = default;
+  FrenchFace();
   FrenchFace(const FrenchFace& other);
   virtual void inc();
   virtual std::string getName() const;

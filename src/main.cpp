@@ -8,7 +8,11 @@
 
 int main(int argc, char const *argv[]) {
   Deck<FrenchFace, FrenchSuite> d = Deck<FrenchFace, FrenchSuite>();
-  d.shuffle();
-  std::cout << "hello world" << std::endl;
+  //d.shuffle();
+
+  while(!d.isEmpty()) {
+    std::cout << d.getTop()->getFace().getName() << std::endl;
+    d.popTop();
+  }
   return 0;
 }

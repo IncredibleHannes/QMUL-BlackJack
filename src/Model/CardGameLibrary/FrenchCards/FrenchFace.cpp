@@ -1,8 +1,10 @@
 #include "FrenchFace.h"
 
-FrenchFace::FrenchFace(const FrenchFace& other) {
+FrenchFace::FrenchFace(const FrenchFace& other)
+  : face(other.face) { }
 
-}
+FrenchFace::FrenchFace()
+  : face(Ace) { }
 
 void FrenchFace::inc() {
   if (this->face == King) {

@@ -24,24 +24,20 @@ class Card : public CardBase {
 static_assert(std::is_base_of<CardProperty, FACE>::value, "FACE parameter not derived from Face");
 static_assert(std::is_base_of<CardProperty, SUITE>::value, "SUITE parameter not derived from Suite");
 public:
-  Card() : face(FACE()), suite(SUITE()) { };
+  Card()
+    : face(FACE()), suite(SUITE()) { };
 
-  Card(FACE f, SUITE s) {
-    this->face = f;
-    this->suite = s;
-  };
+  Card(FACE f, SUITE s)
+  : face(f), suite(s) { };
 
-  Card(const Card<FACE,SUITE> &other) {
-    this->face = other.face;
-    this->suite = other.suite;
-  };
+  Card(const Card<FACE,SUITE> &other)
+    : face(other.face), suite(other.suite) { };
 
-  FACE getFace() {return *this->face;};
-  SUITE getSuite() {return *this->suite;};
+  FACE getFace() { return this->face; };
+  SUITE getSuite() { return this->suite; };
 
   void incFace() { face.inc(); };
   void incSuite() { suite.inc(); };
-
   bool operator!=(const Card& toCompare) const {
     return !(this->face == toCompare.face && this->suite == toCompare.suite);
   };
