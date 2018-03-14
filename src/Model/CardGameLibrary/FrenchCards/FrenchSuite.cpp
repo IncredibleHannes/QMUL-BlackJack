@@ -29,5 +29,5 @@ std::string FrenchSuite::getName() const {
 }
 
 int FrenchSuite::getValue() const {
-  return 1;
+  return 0;
 }
