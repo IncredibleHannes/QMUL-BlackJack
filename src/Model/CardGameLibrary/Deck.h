@@ -1,8 +1,6 @@
 #ifndef DECK_H_
 #define DECK_H_
 
-#include <iostream>
-#include <memory>
 #include <vector>
 #include "DefaultAlgorithm.h"
 #include "Card.h"
@@ -23,14 +21,20 @@ public:
     } while(firstCard != tmpCard);
   }
 
+  ~Deck() {
+    for (CardBase* c : cards) {
+      delete c;
+    }
+  }
+
   void shuffle(std::shared_ptr<ShuffleAlgorithm> a = std::make_shared<DefaultAlgorithm>()) {
       a->shuffle(this->cards);
   };
 
   std::vector<CardBase*> getCards() { return this->cards; };
 
-  Card<FACE,SUITE>* getTop() {
-    return static_cast<Card<FACE, SUITE>*>(cards.at(cards.size()-1));
+  Card<FACE,SUITE> getTop() {
+    return *static_cast<Card<FACE, SUITE>*>(cards.at(cards.size()-1));
   };
 
   void popTop() {

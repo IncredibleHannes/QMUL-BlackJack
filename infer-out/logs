@@ -1,0 +1,656 @@
+[28793][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28793][environment] No .inferconfig file found
+[28793][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28793][environment] INFER_ARGS = @/tmp/args_.tmp.ff15da
+[28793][environment]   Contents of '/tmp/args_.tmp.ff15da'
+[28793][environment]   run
+[28793][environment]   /Contents of '/tmp/args_.tmp.ff15da'
+[28793][environment] command line arguments: infer^run^--^make
+[28793][environment] Analyzer: checkers
+[28793][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28793][   progress] Capturing in make/cc mode...
+[28793][environment] Infer version v0.13.1
+[28793][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[28793][environment] Running command make with env:
+[28793][environment] XDG_VTNR=7
+[28793][environment] SSH_AGENT_PID=1355
+[28793][environment] XDG_SESSION_ID=c1
+[28793][environment] XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/johannes
+[28793][environment] QT_STYLE_OVERRIDE=gtk
+[28793][environment] TERM=xterm-256color
+[28793][environment] SHELL=/bin/bash
+[28793][environment] VTE_VERSION=4205
+[28793][environment] HADOOP_HOME=/home/Dokumente/hadoop-2.7.4/
+[28793][environment] DERBY_HOME=/usr/lib/jvm/java-8-oracle/db
+[28793][environment] QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+[28793][environment] GJS_DEBUG_OUTPUT=stderr
+[28793][environment] WINDOWID=134234261
+[28793][environment] GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+[28793][environment] GTK_MODULES=gail:atk-bridge
+[28793][environment] USER=johannes
+[28793][environment] LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+[28793][environment] QT_ACCESSIBILITY=1
+[28793][environment] XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+[28793][environment] XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+[28793][environment] SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+[28793][environment] SESSION_MANAGER=local/johannes-Lenovo-U41-70:@/tmp/.ICE-unix/1278,unix/johannes-Lenovo-U41-70:/tmp/.ICE-unix/1278
+[28793][environment] DEFAULTS_PATH=/usr/share/gconf/cinnamon.default.path
+[28793][environment] XDG_CONFIG_DIRS=/etc/xdg/xdg-cinnamon:/etc/xdg
+[28793][environment] DESKTOP_SESSION=cinnamon
+[28793][environment] QT_QPA_PLATFORMTHEME=appmenu-qt5
+[28793][environment] XDG_SESSION_TYPE=x11
+[28793][environment] PWD=/home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28793][environment] JAVA_HOME=/usr/lib/jvm/java-8-oracle
+[28793][environment] LANG=de_DE.UTF-8
+[28793][environment] GDM_LANG=de_DE
+[28793][environment] MANDATORY_PATH=/usr/share/gconf/cinnamon.mandatory.path
+[28793][environment] GDMSESSION=cinnamon
+[28793][environment] CINNAMON_VERSION=3.6.7
+[28793][environment] GTK2_MODULES=overlay-scrollbar
+[28793][environment] XDG_SEAT=seat0
+[28793][environment] HOME=/home/johannes
+[28793][environment] SHLVL=1
+[28793][environment] LANGUAGE=de_DE
+[28793][environment] GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+[28793][environment] GTK_OVERLAY_SCROLLING=1
+[28793][environment] XDG_SESSION_DESKTOP=cinnamon
+[28793][environment] LOGNAME=johannes
+[28793][environment] XDG_DATA_DIRS=/usr/share/cinnamon:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop
+[28793][environment] DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-RGzaXDX0uc,guid=79caa8969e92d18e268beb5f5aa5452b
+[28793][environment] J2SDKDIR=/usr/lib/jvm/java-8-oracle
+[28793][environment] LESSOPEN=| /usr/bin/lesspipe %s
+[28793][environment] XDG_RUNTIME_DIR=/run/user/1000
+[28793][environment] DISPLAY=:0
+[28793][environment] XDG_CURRENT_DESKTOP=X-Cinnamon
+[28793][environment] J2REDIR=/usr/lib/jvm/java-8-oracle/jre
+[28793][environment] LESSCLOSE=/usr/bin/lesspipe %s %s
+[28793][environment] XAUTHORITY=/home/johannes/.Xauthority
+[28793][environment] OLDPWD=/home/johannes
+[28793][environment] _=/usr/local/bin/infer
+[28793][environment] INFER_CWD=/home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28793][environment] INFER_ARGS=@/tmp/args_.tmp.ff15da
+[28793][environment] INFER_TOP_RESULTS_DIR=/home/johannes/Dokumente/GitHub/QMUL-BlackJack/infer-out
+[28793][environment] PATH=/usr/local/lib/infer/infer/bin/../lib/wrappers:/home/johannes/bin:/home/johannes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+[28793][environment] INFER_OLD_PATH=/home/johannes/bin:/home/johannes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+[28793][environment] 
+
+[28801][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28801][environment] No .inferconfig file found
+[28801][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28801][environment] INFER_ARGS = @/tmp/args_.tmp.33f0cb
+[28801][environment]   Contents of '/tmp/args_.tmp.33f0cb'
+[28801][environment]   @/tmp/args_.tmp.ff15da
+[28801][environment]   -std=c++11
+[28801][environment]   -Wall
+[28801][environment]   -Werror
+[28801][environment]   -g
+[28801][environment]   -O0
+[28801][environment]   -Isrc/Model
+[28801][environment]   -Isrc/Controller
+[28801][environment]   -Isrc/View
+[28801][environment]   -Isrc/Model/CardGameLibrary
+[28801][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28801][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28801][environment]   -c
+[28801][environment]   src/main.cpp
+[28801][environment]   -o
+[28801][environment]   build/src/main.o
+[28801][environment]   /Contents of '/tmp/args_.tmp.33f0cb'
+[28801][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/main.cpp^-o^build/src/main.o
+[28801][environment] Analyzer: checkers
+[28801][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28801][      debug] 
+[28801][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/main.cpp ***
+[28801][      debug] Clang frontend action is translating and linting
+[28801][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28801][      debug] Elapsed: 1.073s.
+[28801][      debug] 
+[28813][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28813][environment] No .inferconfig file found
+[28813][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28813][environment] INFER_ARGS = @/tmp/args_.tmp.7aec40
+[28813][environment]   Contents of '/tmp/args_.tmp.7aec40'
+[28813][environment]   @/tmp/args_.tmp.ff15da
+[28813][environment]   -std=c++11
+[28813][environment]   -Wall
+[28813][environment]   -Werror
+[28813][environment]   -g
+[28813][environment]   -O0
+[28813][environment]   -Isrc/Model
+[28813][environment]   -Isrc/Controller
+[28813][environment]   -Isrc/View
+[28813][environment]   -Isrc/Model/CardGameLibrary
+[28813][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28813][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28813][environment]   -c
+[28813][environment]   src/View/View.cpp
+[28813][environment]   -o
+[28813][environment]   build/src/View/View.o
+[28813][environment]   /Contents of '/tmp/args_.tmp.7aec40'
+[28813][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/View/View.cpp^-o^build/src/View/View.o
+[28813][environment] Analyzer: checkers
+[28813][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28813][      debug] 
+[28813][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/View/View.cpp ***
+[28813][      debug] Clang frontend action is translating and linting
+[28813][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28813][      debug] Elapsed: 10.538ms.
+[28813][      debug] 
+[28822][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28822][environment] No .inferconfig file found
+[28822][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28822][environment] INFER_ARGS = @/tmp/args_.tmp.2adf5a
+[28822][environment]   Contents of '/tmp/args_.tmp.2adf5a'
+[28822][environment]   @/tmp/args_.tmp.ff15da
+[28822][environment]   -std=c++11
+[28822][environment]   -Wall
+[28822][environment]   -Werror
+[28822][environment]   -g
+[28822][environment]   -O0
+[28822][environment]   -Isrc/Model
+[28822][environment]   -Isrc/Controller
+[28822][environment]   -Isrc/View
+[28822][environment]   -Isrc/Model/CardGameLibrary
+[28822][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28822][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28822][environment]   -c
+[28822][environment]   src/Controller/Controller.cpp
+[28822][environment]   -o
+[28822][environment]   build/src/Controller/Controller.o
+[28822][environment]   /Contents of '/tmp/args_.tmp.2adf5a'
+[28822][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/Controller/Controller.cpp^-o^build/src/Controller/Controller.o
+[28822][environment] Analyzer: checkers
+[28822][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28822][      debug] 
+[28822][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/Controller/Controller.cpp ***
+[28822][      debug] Clang frontend action is translating and linting
+[28822][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28822][      debug] Elapsed: 11.645ms.
+[28822][      debug] 
+[28831][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28831][environment] No .inferconfig file found
+[28831][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28831][environment] INFER_ARGS = @/tmp/args_.tmp.89719f
+[28831][environment]   Contents of '/tmp/args_.tmp.89719f'
+[28831][environment]   @/tmp/args_.tmp.ff15da
+[28831][environment]   -std=c++11
+[28831][environment]   -Wall
+[28831][environment]   -Werror
+[28831][environment]   -g
+[28831][environment]   -O0
+[28831][environment]   -Isrc/Model
+[28831][environment]   -Isrc/Controller
+[28831][environment]   -Isrc/View
+[28831][environment]   -Isrc/Model/CardGameLibrary
+[28831][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28831][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28831][environment]   -c
+[28831][environment]   src/Model/CardGameLibrary/CardProperty.cpp
+[28831][environment]   -o
+[28831][environment]   build/src/Model/CardGameLibrary/CardProperty.o
+[28831][environment]   /Contents of '/tmp/args_.tmp.89719f'
+[28831][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/Model/CardGameLibrary/CardProperty.cpp^-o^build/src/Model/CardGameLibrary/CardProperty.o
+[28831][environment] Analyzer: checkers
+[28831][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28831][      debug] 
+[28831][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/Model/CardGameLibrary/CardProperty.cpp ***
+[28831][      debug] Clang frontend action is translating and linting
+[28831][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28831][      debug] Elapsed: 408ms.
+[28831][      debug] 
+[28842][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28842][environment] No .inferconfig file found
+[28842][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28842][environment] INFER_ARGS = @/tmp/args_.tmp.14d487
+[28842][environment]   Contents of '/tmp/args_.tmp.14d487'
+[28842][environment]   @/tmp/args_.tmp.ff15da
+[28842][environment]   -std=c++11
+[28842][environment]   -Wall
+[28842][environment]   -Werror
+[28842][environment]   -g
+[28842][environment]   -O0
+[28842][environment]   -Isrc/Model
+[28842][environment]   -Isrc/Controller
+[28842][environment]   -Isrc/View
+[28842][environment]   -Isrc/Model/CardGameLibrary
+[28842][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28842][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28842][environment]   -c
+[28842][environment]   src/Model/CardGameLibrary/FrenchCards/FrenchFace.cpp
+[28842][environment]   -o
+[28842][environment]   build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o
+[28842][environment]   /Contents of '/tmp/args_.tmp.14d487'
+[28842][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/Model/CardGameLibrary/FrenchCards/FrenchFace.cpp^-o^build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o
+[28842][environment] Analyzer: checkers
+[28842][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28842][      debug] 
+[28842][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/Model/CardGameLibrary/FrenchCards/FrenchFace.cpp ***
+[28842][      debug] Clang frontend action is translating and linting
+[28842][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28842][      debug] Elapsed: 363ms.
+[28842][      debug] 
+[28854][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28854][environment] No .inferconfig file found
+[28854][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28854][environment] INFER_ARGS = @/tmp/args_.tmp.45d318
+[28854][environment]   Contents of '/tmp/args_.tmp.45d318'
+[28854][environment]   @/tmp/args_.tmp.ff15da
+[28854][environment]   -std=c++11
+[28854][environment]   -Wall
+[28854][environment]   -Werror
+[28854][environment]   -g
+[28854][environment]   -O0
+[28854][environment]   -Isrc/Model
+[28854][environment]   -Isrc/Controller
+[28854][environment]   -Isrc/View
+[28854][environment]   -Isrc/Model/CardGameLibrary
+[28854][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28854][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28854][environment]   -c
+[28854][environment]   src/Model/CardGameLibrary/FrenchCards/FrenchSuite.cpp
+[28854][environment]   -o
+[28854][environment]   build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o
+[28854][environment]   /Contents of '/tmp/args_.tmp.45d318'
+[28854][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/Model/CardGameLibrary/FrenchCards/FrenchSuite.cpp^-o^build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o
+[28854][environment] Analyzer: checkers
+[28854][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28854][      debug] 
+[28854][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.cpp ***
+[28854][      debug] Clang frontend action is translating and linting
+[28854][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28854][      debug] Elapsed: 381ms.
+[28854][      debug] 
+[28866][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28866][environment] No .inferconfig file found
+[28866][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28866][environment] INFER_ARGS = @/tmp/args_.tmp.1b69e5
+[28866][environment]   Contents of '/tmp/args_.tmp.1b69e5'
+[28866][environment]   @/tmp/args_.tmp.ff15da
+[28866][environment]   -std=c++11
+[28866][environment]   -Wall
+[28866][environment]   -Werror
+[28866][environment]   -g
+[28866][environment]   -O0
+[28866][environment]   -Isrc/Model
+[28866][environment]   -Isrc/Controller
+[28866][environment]   -Isrc/View
+[28866][environment]   -Isrc/Model/CardGameLibrary
+[28866][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28866][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28866][environment]   -c
+[28866][environment]   src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.cpp
+[28866][environment]   -o
+[28866][environment]   build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o
+[28866][environment]   /Contents of '/tmp/args_.tmp.1b69e5'
+[28866][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.cpp^-o^build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o
+[28866][environment] Analyzer: checkers
+[28866][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28866][      debug] 
+[28866][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.cpp ***
+[28866][      debug] Clang frontend action is translating and linting
+[28866][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28866][      debug] Elapsed: 765ms.
+[28866][      debug] 
+[28876][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28876][environment] No .inferconfig file found
+[28876][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28876][environment] INFER_ARGS = @/tmp/args_.tmp.cea83a
+[28876][environment]   Contents of '/tmp/args_.tmp.cea83a'
+[28876][environment]   @/tmp/args_.tmp.ff15da
+[28876][environment]   -std=c++11
+[28876][environment]   -Wall
+[28876][environment]   -Werror
+[28876][environment]   -g
+[28876][environment]   -O0
+[28876][environment]   build/src/main.o
+[28876][environment]   build/src/View/View.o
+[28876][environment]   build/src/Controller/Controller.o
+[28876][environment]   build/src/Model/CardGameLibrary/CardProperty.o
+[28876][environment]   build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o
+[28876][environment]   build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o
+[28876][environment]   build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o
+[28876][environment]   -o
+[28876][environment]   build/main
+[28876][environment]   /Contents of '/tmp/args_.tmp.cea83a'
+[28876][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^build/src/main.o^build/src/View/View.o^build/src/Controller/Controller.o^build/src/Model/CardGameLibrary/CardProperty.o^build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o^build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o^build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o^-o^build/main
+[28876][environment] Analyzer: checkers
+[28876][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28876][      debug] Running non-cc command without capture: '/usr/bin/ld' "-z" "relro" "--hash-style=gnu" "--eh-frame-hdr" "-m" "elf_x86_64" "-dynamic-linker" "/lib64/ld-linux-x86-64.so.2" "-o" "build/main" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu" "-L/lib/x86_64-linux-gnu" "-L/lib/../lib64" "-L/usr/lib/x86_64-linux-gnu" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.." "-L/usr/local/lib/infer/facebook-clang-plugins/clang/install/bin/../lib" "-L/lib" "-L/usr/lib" "build/src/main.o" "build/src/View/View.o" "build/src/Controller/Controller.o" "build/src/Model/CardGameLibrary/CardProperty.o" "build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o" "build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o" "build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o" "-lstdc++" "-lm" "-lgcc_s" "-lgcc" "-lc" "-lgcc_s" "-lgcc" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o"
+[28876][      debug] 
+[28876][ extern err] Error: the following clang command did not run successfully:
+[28876][ extern err]   '/usr/bin/ld' "-z" "relro" "--hash-style=gnu" "--eh-frame-hdr" "-m" "elf_x86_64" "-dynamic-linker" "/lib64/ld-linux-x86-64.so.2" "-o" "build/main" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu" "-L/lib/x86_64-linux-gnu" "-L/lib/../lib64" "-L/usr/lib/x86_64-linux-gnu" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.." "-L/usr/local/lib/infer/facebook-clang-plugins/clang/install/bin/../lib" "-L/lib" "-L/usr/lib" "build/src/main.o" "build/src/View/View.o" "build/src/Controller/Controller.o" "build/src/Model/CardGameLibrary/CardProperty.o" "build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o" "build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o" "build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o" "-lstdc++" "-lm" "-lgcc_s" "-lgcc" "-lc" "-lgcc_s" "-lgcc" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o"
+[28876][ extern err] [28793][ extern err] *** capture command failed:
+*** make
+*** exited with code 2
+
+[28793][ extern err] 
+[28919][      phase] ============================================================
+[28919][      phase] = New infer execution begins
+[28919][      phase] ============================================================
+[28919][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28919][environment] No .inferconfig file found
+[28919][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28919][environment] INFER_ARGS = @/tmp/args_.tmp.fd97bb
+[28919][environment]   Contents of '/tmp/args_.tmp.fd97bb'
+[28919][environment]   run
+[28919][environment]   --reactive
+[28919][environment]   /Contents of '/tmp/args_.tmp.fd97bb'
+[28919][environment] command line arguments: infer^run^--reactive^--^make
+[28919][environment] Analyzer: checkers
+[28919][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28919][   progress] Capturing in make/cc mode...
+[28919][environment] Infer version v0.13.1
+[28919][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[28919][environment] Running command make with env:
+[28919][environment] XDG_VTNR=7
+[28919][environment] SSH_AGENT_PID=1355
+[28919][environment] XDG_SESSION_ID=c1
+[28919][environment] XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/johannes
+[28919][environment] QT_STYLE_OVERRIDE=gtk
+[28919][environment] TERM=xterm-256color
+[28919][environment] SHELL=/bin/bash
+[28919][environment] VTE_VERSION=4205
+[28919][environment] HADOOP_HOME=/home/Dokumente/hadoop-2.7.4/
+[28919][environment] DERBY_HOME=/usr/lib/jvm/java-8-oracle/db
+[28919][environment] QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+[28919][environment] GJS_DEBUG_OUTPUT=stderr
+[28919][environment] WINDOWID=134234261
+[28919][environment] GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+[28919][environment] GTK_MODULES=gail:atk-bridge
+[28919][environment] USER=johannes
+[28919][environment] LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+[28919][environment] QT_ACCESSIBILITY=1
+[28919][environment] XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+[28919][environment] XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+[28919][environment] SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+[28919][environment] SESSION_MANAGER=local/johannes-Lenovo-U41-70:@/tmp/.ICE-unix/1278,unix/johannes-Lenovo-U41-70:/tmp/.ICE-unix/1278
+[28919][environment] DEFAULTS_PATH=/usr/share/gconf/cinnamon.default.path
+[28919][environment] XDG_CONFIG_DIRS=/etc/xdg/xdg-cinnamon:/etc/xdg
+[28919][environment] DESKTOP_SESSION=cinnamon
+[28919][environment] QT_QPA_PLATFORMTHEME=appmenu-qt5
+[28919][environment] XDG_SESSION_TYPE=x11
+[28919][environment] PWD=/home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28919][environment] JAVA_HOME=/usr/lib/jvm/java-8-oracle
+[28919][environment] LANG=de_DE.UTF-8
+[28919][environment] GDM_LANG=de_DE
+[28919][environment] MANDATORY_PATH=/usr/share/gconf/cinnamon.mandatory.path
+[28919][environment] GDMSESSION=cinnamon
+[28919][environment] CINNAMON_VERSION=3.6.7
+[28919][environment] GTK2_MODULES=overlay-scrollbar
+[28919][environment] XDG_SEAT=seat0
+[28919][environment] HOME=/home/johannes
+[28919][environment] SHLVL=1
+[28919][environment] LANGUAGE=de_DE
+[28919][environment] GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+[28919][environment] GTK_OVERLAY_SCROLLING=1
+[28919][environment] XDG_SESSION_DESKTOP=cinnamon
+[28919][environment] LOGNAME=johannes
+[28919][environment] XDG_DATA_DIRS=/usr/share/cinnamon:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop
+[28919][environment] DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-RGzaXDX0uc,guid=79caa8969e92d18e268beb5f5aa5452b
+[28919][environment] J2SDKDIR=/usr/lib/jvm/java-8-oracle
+[28919][environment] LESSOPEN=| /usr/bin/lesspipe %s
+[28919][environment] XDG_RUNTIME_DIR=/run/user/1000
+[28919][environment] DISPLAY=:0
+[28919][environment] XDG_CURRENT_DESKTOP=X-Cinnamon
+[28919][environment] J2REDIR=/usr/lib/jvm/java-8-oracle/jre
+[28919][environment] LESSCLOSE=/usr/bin/lesspipe %s %s
+[28919][environment] XAUTHORITY=/home/johannes/.Xauthority
+[28919][environment] OLDPWD=/home/johannes
+[28919][environment] _=/usr/local/bin/infer
+[28919][environment] INFER_CWD=/home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28919][environment] INFER_ARGS=@/tmp/args_.tmp.fd97bb
+[28919][environment] INFER_TOP_RESULTS_DIR=/home/johannes/Dokumente/GitHub/QMUL-BlackJack/infer-out
+[28919][environment] PATH=/usr/local/lib/infer/infer/bin/../lib/wrappers:/home/johannes/bin:/home/johannes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+[28919][environment] INFER_OLD_PATH=/home/johannes/bin:/home/johannes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+[28919][environment] 
+
+[28927][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28927][environment] No .inferconfig file found
+[28927][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28927][environment] INFER_ARGS = @/tmp/args_.tmp.b78858
+[28927][environment]   Contents of '/tmp/args_.tmp.b78858'
+[28927][environment]   @/tmp/args_.tmp.fd97bb
+[28927][environment]   -std=c++11
+[28927][environment]   -Wall
+[28927][environment]   -Werror
+[28927][environment]   -g
+[28927][environment]   -O0
+[28927][environment]   -Isrc/Model
+[28927][environment]   -Isrc/Controller
+[28927][environment]   -Isrc/View
+[28927][environment]   -Isrc/Model/CardGameLibrary
+[28927][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28927][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28927][environment]   -c
+[28927][environment]   src/main.cpp
+[28927][environment]   -o
+[28927][environment]   build/src/main.o
+[28927][environment]   /Contents of '/tmp/args_.tmp.b78858'
+[28927][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/main.cpp^-o^build/src/main.o
+[28927][environment] Analyzer: checkers
+[28927][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28927][      debug] 
+[28927][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/main.cpp ***
+[28927][      debug] Clang frontend action is translating and linting
+[28927][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28927][      debug] Elapsed: 1.146s.
+[28927][      debug] 
+[28939][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28939][environment] No .inferconfig file found
+[28939][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28939][environment] INFER_ARGS = @/tmp/args_.tmp.ef5a73
+[28939][environment]   Contents of '/tmp/args_.tmp.ef5a73'
+[28939][environment]   @/tmp/args_.tmp.fd97bb
+[28939][environment]   -std=c++11
+[28939][environment]   -Wall
+[28939][environment]   -Werror
+[28939][environment]   -g
+[28939][environment]   -O0
+[28939][environment]   -Isrc/Model
+[28939][environment]   -Isrc/Controller
+[28939][environment]   -Isrc/View
+[28939][environment]   -Isrc/Model/CardGameLibrary
+[28939][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28939][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28939][environment]   -c
+[28939][environment]   src/View/View.cpp
+[28939][environment]   -o
+[28939][environment]   build/src/View/View.o
+[28939][environment]   /Contents of '/tmp/args_.tmp.ef5a73'
+[28939][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/View/View.cpp^-o^build/src/View/View.o
+[28939][environment] Analyzer: checkers
+[28939][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28939][      debug] 
+[28939][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/View/View.cpp ***
+[28939][      debug] Clang frontend action is translating and linting
+[28939][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28939][      debug] Elapsed: 13.377ms.
+[28939][      debug] 
+[28948][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28948][environment] No .inferconfig file found
+[28948][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28948][environment] INFER_ARGS = @/tmp/args_.tmp.92f5f1
+[28948][environment]   Contents of '/tmp/args_.tmp.92f5f1'
+[28948][environment]   @/tmp/args_.tmp.fd97bb
+[28948][environment]   -std=c++11
+[28948][environment]   -Wall
+[28948][environment]   -Werror
+[28948][environment]   -g
+[28948][environment]   -O0
+[28948][environment]   -Isrc/Model
+[28948][environment]   -Isrc/Controller
+[28948][environment]   -Isrc/View
+[28948][environment]   -Isrc/Model/CardGameLibrary
+[28948][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28948][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28948][environment]   -c
+[28948][environment]   src/Controller/Controller.cpp
+[28948][environment]   -o
+[28948][environment]   build/src/Controller/Controller.o
+[28948][environment]   /Contents of '/tmp/args_.tmp.92f5f1'
+[28948][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/Controller/Controller.cpp^-o^build/src/Controller/Controller.o
+[28948][environment] Analyzer: checkers
+[28948][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28948][      debug] 
+[28948][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/Controller/Controller.cpp ***
+[28948][      debug] Clang frontend action is translating and linting
+[28948][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28948][      debug] Elapsed: 11.437ms.
+[28948][      debug] 
+[28957][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28957][environment] No .inferconfig file found
+[28957][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28957][environment] INFER_ARGS = @/tmp/args_.tmp.edb80f
+[28957][environment]   Contents of '/tmp/args_.tmp.edb80f'
+[28957][environment]   @/tmp/args_.tmp.fd97bb
+[28957][environment]   -std=c++11
+[28957][environment]   -Wall
+[28957][environment]   -Werror
+[28957][environment]   -g
+[28957][environment]   -O0
+[28957][environment]   -Isrc/Model
+[28957][environment]   -Isrc/Controller
+[28957][environment]   -Isrc/View
+[28957][environment]   -Isrc/Model/CardGameLibrary
+[28957][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28957][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28957][environment]   -c
+[28957][environment]   src/Model/CardGameLibrary/CardProperty.cpp
+[28957][environment]   -o
+[28957][environment]   build/src/Model/CardGameLibrary/CardProperty.o
+[28957][environment]   /Contents of '/tmp/args_.tmp.edb80f'
+[28957][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/Model/CardGameLibrary/CardProperty.cpp^-o^build/src/Model/CardGameLibrary/CardProperty.o
+[28957][environment] Analyzer: checkers
+[28957][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28957][      debug] 
+[28957][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/Model/CardGameLibrary/CardProperty.cpp ***
+[28957][      debug] Clang frontend action is translating and linting
+[28957][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28957][      debug] Elapsed: 432ms.
+[28957][      debug] 
+[28968][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28968][environment] No .inferconfig file found
+[28968][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28968][environment] INFER_ARGS = @/tmp/args_.tmp.b2c115
+[28968][environment]   Contents of '/tmp/args_.tmp.b2c115'
+[28968][environment]   @/tmp/args_.tmp.fd97bb
+[28968][environment]   -std=c++11
+[28968][environment]   -Wall
+[28968][environment]   -Werror
+[28968][environment]   -g
+[28968][environment]   -O0
+[28968][environment]   -Isrc/Model
+[28968][environment]   -Isrc/Controller
+[28968][environment]   -Isrc/View
+[28968][environment]   -Isrc/Model/CardGameLibrary
+[28968][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28968][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28968][environment]   -c
+[28968][environment]   src/Model/CardGameLibrary/FrenchCards/FrenchFace.cpp
+[28968][environment]   -o
+[28968][environment]   build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o
+[28968][environment]   /Contents of '/tmp/args_.tmp.b2c115'
+[28968][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/Model/CardGameLibrary/FrenchCards/FrenchFace.cpp^-o^build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o
+[28968][environment] Analyzer: checkers
+[28968][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28968][      debug] 
+[28968][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/Model/CardGameLibrary/FrenchCards/FrenchFace.cpp ***
+[28968][      debug] Clang frontend action is translating and linting
+[28968][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28968][      debug] Elapsed: 451ms.
+[28968][      debug] 
+[28980][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28980][environment] No .inferconfig file found
+[28980][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28980][environment] INFER_ARGS = @/tmp/args_.tmp.7f3c9d
+[28980][environment]   Contents of '/tmp/args_.tmp.7f3c9d'
+[28980][environment]   @/tmp/args_.tmp.fd97bb
+[28980][environment]   -std=c++11
+[28980][environment]   -Wall
+[28980][environment]   -Werror
+[28980][environment]   -g
+[28980][environment]   -O0
+[28980][environment]   -Isrc/Model
+[28980][environment]   -Isrc/Controller
+[28980][environment]   -Isrc/View
+[28980][environment]   -Isrc/Model/CardGameLibrary
+[28980][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28980][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28980][environment]   -c
+[28980][environment]   src/Model/CardGameLibrary/FrenchCards/FrenchSuite.cpp
+[28980][environment]   -o
+[28980][environment]   build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o
+[28980][environment]   /Contents of '/tmp/args_.tmp.7f3c9d'
+[28980][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/Model/CardGameLibrary/FrenchCards/FrenchSuite.cpp^-o^build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o
+[28980][environment] Analyzer: checkers
+[28980][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28980][      debug] 
+[28980][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.cpp ***
+[28980][      debug] Clang frontend action is translating and linting
+[28980][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28980][      debug] Elapsed: 519ms.
+[28980][      debug] 
+[28992][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28992][environment] No .inferconfig file found
+[28992][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[28992][environment] INFER_ARGS = @/tmp/args_.tmp.ec84d9
+[28992][environment]   Contents of '/tmp/args_.tmp.ec84d9'
+[28992][environment]   @/tmp/args_.tmp.fd97bb
+[28992][environment]   -std=c++11
+[28992][environment]   -Wall
+[28992][environment]   -Werror
+[28992][environment]   -g
+[28992][environment]   -O0
+[28992][environment]   -Isrc/Model
+[28992][environment]   -Isrc/Controller
+[28992][environment]   -Isrc/View
+[28992][environment]   -Isrc/Model/CardGameLibrary
+[28992][environment]   -Isrc/Model/CardGameLibrary/ShuffleAlgorithms
+[28992][environment]   -Isrc/Model/CardGameLibrary/FrenchCards
+[28992][environment]   -c
+[28992][environment]   src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.cpp
+[28992][environment]   -o
+[28992][environment]   build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o
+[28992][environment]   /Contents of '/tmp/args_.tmp.ec84d9'
+[28992][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^-Isrc/Model^-Isrc/Controller^-Isrc/View^-Isrc/Model/CardGameLibrary^-Isrc/Model/CardGameLibrary/ShuffleAlgorithms^-Isrc/Model/CardGameLibrary/FrenchCards^-c^src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.cpp^-o^build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o
+[28992][environment] Analyzer: checkers
+[28992][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[28992][      debug] 
+[28992][      debug] *** Beginning capture of file /home/johannes/Dokumente/GitHub/QMUL-BlackJack/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.cpp ***
+[28992][      debug] Clang frontend action is translating and linting
+[28992][      debug] Loading the following linters files: /usr/local/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[28992][      debug] Elapsed: 799ms.
+[28992][      debug] 
+[29004][environment] CWD = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[29004][environment] No .inferconfig file found
+[29004][environment] Project root = /home/johannes/Dokumente/GitHub/QMUL-BlackJack
+[29004][environment] INFER_ARGS = @/tmp/args_.tmp.d2f7cf
+[29004][environment]   Contents of '/tmp/args_.tmp.d2f7cf'
+[29004][environment]   @/tmp/args_.tmp.fd97bb
+[29004][environment]   -std=c++11
+[29004][environment]   -Wall
+[29004][environment]   -Werror
+[29004][environment]   -g
+[29004][environment]   -O0
+[29004][environment]   build/src/main.o
+[29004][environment]   build/src/View/View.o
+[29004][environment]   build/src/Controller/Controller.o
+[29004][environment]   build/src/Model/CardGameLibrary/CardProperty.o
+[29004][environment]   build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o
+[29004][environment]   build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o
+[29004][environment]   build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o
+[29004][environment]   -o
+[29004][environment]   build/main
+[29004][environment]   /Contents of '/tmp/args_.tmp.d2f7cf'
+[29004][environment] command line arguments: g++^-std=c++11^-Wall^-Werror^-g^-O0^build/src/main.o^build/src/View/View.o^build/src/Controller/Controller.o^build/src/Model/CardGameLibrary/CardProperty.o^build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o^build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o^build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o^-o^build/main
+[29004][environment] Analyzer: checkers
+[29004][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[29004][      debug] Running non-cc command without capture: '/usr/bin/ld' "-z" "relro" "--hash-style=gnu" "--eh-frame-hdr" "-m" "elf_x86_64" "-dynamic-linker" "/lib64/ld-linux-x86-64.so.2" "-o" "build/main" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu" "-L/lib/x86_64-linux-gnu" "-L/lib/../lib64" "-L/usr/lib/x86_64-linux-gnu" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.." "-L/usr/local/lib/infer/facebook-clang-plugins/clang/install/bin/../lib" "-L/lib" "-L/usr/lib" "build/src/main.o" "build/src/View/View.o" "build/src/Controller/Controller.o" "build/src/Model/CardGameLibrary/CardProperty.o" "build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o" "build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o" "build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o" "-lstdc++" "-lm" "-lgcc_s" "-lgcc" "-lc" "-lgcc_s" "-lgcc" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o"
+[29004][      debug] 
+[29004][ extern err] Error: the following clang command did not run successfully:
+[29004][ extern err]   '/usr/bin/ld' "-z" "relro" "--hash-style=gnu" "--eh-frame-hdr" "-m" "elf_x86_64" "-dynamic-linker" "/lib64/ld-linux-x86-64.so.2" "-o" "build/main" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu" "-L/lib/x86_64-linux-gnu" "-L/lib/../lib64" "-L/usr/lib/x86_64-linux-gnu" "-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.." "-L/usr/local/lib/infer/facebook-clang-plugins/clang/install/bin/../lib" "-L/lib" "-L/usr/lib" "build/src/main.o" "build/src/View/View.o" "build/src/Controller/Controller.o" "build/src/Model/CardGameLibrary/CardProperty.o" "build/src/Model/CardGameLibrary/FrenchCards/FrenchFace.o" "build/src/Model/CardGameLibrary/FrenchCards/FrenchSuite.o" "build/src/Model/CardGameLibrary/ShuffleAlgorithms/DefaultAlgorithhm.o" "-lstdc++" "-lm" "-lgcc_s" "-lgcc" "-lc" "-lgcc_s" "-lgcc" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o" "/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o"
+[29004][ extern err] [28919][ extern err] *** capture command failed:
+*** make
+*** exited with code 2
+
+[28919][ extern err] 
