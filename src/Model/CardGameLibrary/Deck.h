@@ -25,11 +25,7 @@ public:
     } while(firstCard != tmpCard);
   }
 
-  ~Deck() {
-    for (CardBase* c : cards) {
-      delete c;
-    }
-  }
+  ~Deck() {};
 
   void shuffle(std::shared_ptr<ShuffleAlgorithm> a = std::make_shared<DefaultAlgorithm>()) {
       a->shuffle(this->cards);

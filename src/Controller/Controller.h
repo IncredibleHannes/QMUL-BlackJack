@@ -11,21 +11,27 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 
+
+#include <iostream>
 #include "View.h"
 #include "Deck.h"
+#include "Hand.h"
 #include "FrenchFace.h"
 #include "FrenchSuite.h"
 
 class Controller {
 public:
+  Controller();
   /**
    * Starts the game and implements the whole game cicle
    */
   void run();
+  void dealFirstTwoCards();
 
 private:
+  Hand<FrenchFace, FrenchSuite> playerHand;
+  Hand<FrenchFace, FrenchSuite> cpuHand;
   Deck<FrenchFace, FrenchSuite> deck;
-
 
 };
 #endif

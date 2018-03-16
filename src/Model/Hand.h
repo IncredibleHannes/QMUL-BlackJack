@@ -11,13 +11,15 @@ static_assert(std::is_base_of<CardProperty, SUITE>::value, "SUITE parameter not 
 
 private:
   typedef std::vector<Card<FACE, SUITE>> CardList;
-  int handSize;
+  unsigned int handSize;
   CardList hand;
 
 public:
   Hand(int size) : handSize(size) {};
+  Hand(const Hand& hand)
+    : handSize(hand.handSize), hand(hand.hand) {};
   bool addCard(Card<FACE, SUITE> c) {
-    if (hand.size() < this->size) {
+    if (hand.size() < this->handSize) {
       this->hand.push_back(c);
       return true;
     } else {
@@ -25,9 +27,13 @@ public:
     }
   };
 
-  int getSize() {
+  int getSize() const {
     return hand.size();
   };
+
+  void clearHand() {
+    this->hand = CardList();
+  }
 
   typedef typename CardList::iterator iterator;
   typedef typename CardList::const_iterator const_iterator;

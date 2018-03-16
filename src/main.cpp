@@ -1,5 +1,6 @@
 #include <iostream>
 
+#include "Controller.h"
 #include "Card.h"
 #include "Deck.h"
 #include "FrenchFace.h"
@@ -7,13 +8,7 @@
 
 
 int main(int argc, char const *argv[]) {
-  Deck<FrenchFace, FrenchSuite> d = Deck<FrenchFace, FrenchSuite>();
-  d.shuffle();
-
-  while(!d.isEmpty()) {
-    Card<FrenchFace, FrenchSuite> tmp = d.getTop();
-    d.popTop();
-    std::cout << tmp.getFace().getName() << " : " << tmp.getSuite().getName() << std::endl;
-  }
+  Controller c = Controller();
+  c.run();
   return 0;
 }
