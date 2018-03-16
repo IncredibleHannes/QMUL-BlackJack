@@ -12,6 +12,9 @@
 #define CONTROLLER_H
 
 #include "View.h"
+#include "Deck.h"
+#include "FrenchFace.h"
+#include "FrenchSuite.h"
 
 class Controller {
 public:
@@ -19,5 +22,10 @@ public:
    * Starts the game and implements the whole game cicle
    */
   void run();
+
+private:
+  Deck<FrenchFace, FrenchSuite> deck;
+
+
 };
 #endif

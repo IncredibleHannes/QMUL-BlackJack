@@ -56,5 +56,5 @@ int FrenchFace::getValue() const {
     case Queen : return 10;
     case King  : return 10;
   }
-  return "";
+  return 0;
 }
