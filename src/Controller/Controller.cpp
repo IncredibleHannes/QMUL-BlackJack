@@ -1,8 +1,8 @@
 #include "Controller.h"
 
 Controller::Controller()
-  : playerHand(Hand<FrenchFace, FrenchSuite>(5)), cpuHand(Hand<FrenchFace, FrenchSuite>(5)),
-    deck(Deck<FrenchFace, FrenchSuite>()) {};
+  : view(View()), playerHand(Hand<FrenchFace, FrenchSuite>(5)),
+    cpuHand(Hand<FrenchFace, FrenchSuite>(5)), deck(Deck<FrenchFace, FrenchSuite>()) {};
 
 void Controller::run(){
   while (true) {
@@ -10,9 +10,7 @@ void Controller::run(){
     this->deck.shuffle();
     this->dealFirstTwoCards();
 
-    for(Card<FrenchFace, FrenchSuite> c : this->playerHand) {
-      std::cout << c.getFace().getName() << ":" << c.getSuite().getName() << std::endl;
-    }
+    this->view.showHand(this->playerHand);
     break;
   }
 }

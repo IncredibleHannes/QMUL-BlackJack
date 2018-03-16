@@ -18,6 +18,7 @@
 #include "Hand.h"
 #include "FrenchFace.h"
 #include "FrenchSuite.h"
+#include "View.h"
 
 class Controller {
 public:
@@ -29,6 +30,7 @@ public:
   void dealFirstTwoCards();
 
 private:
+  View view;
   Hand<FrenchFace, FrenchSuite> playerHand;
   Hand<FrenchFace, FrenchSuite> cpuHand;
   Deck<FrenchFace, FrenchSuite> deck;
