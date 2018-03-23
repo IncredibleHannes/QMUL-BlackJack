@@ -4,4 +4,5 @@
 -Isrc/Model/CardGameLibrary
 -Isrc/Model
 -Isrc/View
+-Isrc/Controller
 -Isrc
