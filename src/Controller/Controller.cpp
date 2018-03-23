@@ -11,6 +11,8 @@ void Controller::run(){
     this->dealFirstTwoCards();
 
     this->view.showHand(this->playerHand);
+    this->playersTurn();
+
     break;
   }
 }
@@ -23,3 +25,21 @@ void Controller::dealFirstTwoCards() {
     this->deck.popTop();
   }
 };
+
+void Controller::playersTurn() {
+  while(view.askPlayerTwistOrStick()) {
+    this->playerHand.addCard(this->deck.getTop());
+    this->deck.popTop();
+    this->view.showHand(this->playerHand);
+    if (isBust(this->playerHand)){
+      view.printBust();
+      return;
+    } else if (playerHand.getSize() >= 5){
+      return;
+    }
+  }
+}
+
+bool Controller::isBust(Hand<FrenchFace, FrenchSuite> h) {
+  return h.getValue() > 21;
+}

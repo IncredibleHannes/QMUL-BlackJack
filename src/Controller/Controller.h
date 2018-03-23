@@ -28,6 +28,8 @@ public:
    */
   void run();
   void dealFirstTwoCards();
+  void playersTurn();
+  bool isBust(Hand<FrenchFace, FrenchSuite> h);
 
 private:
   View view;

@@ -10,5 +10,7 @@
 class View {
 public:
   void showHand(Hand<FrenchFace, FrenchSuite> h);
+  bool askPlayerTwistOrStick();
+  void printBust();
 };
 #endif

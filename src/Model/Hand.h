@@ -16,8 +16,10 @@ private:
 
 public:
   Hand(int size) : handSize(size) {};
+
   Hand(const Hand& hand)
     : handSize(hand.handSize), hand(hand.hand) {};
+
   bool addCard(Card<FACE, SUITE> c) {
     if (hand.size() < this->handSize) {
       this->hand.push_back(c);
@@ -33,6 +35,14 @@ public:
 
   void clearHand() {
     this->hand = CardList();
+  }
+
+  virtual int getValue() {
+    int i = 0;
+    for (Card<FACE, SUITE> c : hand) {
+      i += c.getFace().getValue();
+    }
+    return i;
   }
 
   typedef typename CardList::iterator iterator;
