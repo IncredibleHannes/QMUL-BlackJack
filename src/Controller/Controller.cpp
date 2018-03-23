@@ -67,6 +67,14 @@ void Controller::cpuTurn() {
   }
   if (cpuHand.getValue() < playerHand.getValue()) {
     this->view.printPlayerWon();
+  } else if(cpuHand.getValue() == playerHand.getValue()) {
+    if (cpuHand.getSize() > playerHand.getSize()) {
+      this->view.printBankWon();
+    } else if (cpuHand.getSize() == playerHand.getSize()) {
+      this->view.printDraw();
+    } else {
+      this->view.printPlayerWon();
+    }
   } else {
     this->view.printBankWon();
   }

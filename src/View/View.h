@@ -16,6 +16,7 @@ public:
   void printBanksTurn();
   void printPlayerWon();
   void printBankWon();
+  void printDraw();
   void printBye();
 };
 #endif

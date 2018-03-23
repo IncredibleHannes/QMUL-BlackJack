@@ -56,6 +56,10 @@ void View::printBankWon() {
   std::cout << "Bad luck, the bank won." << std::endl << std::endl;
 }
 
+void View::printDraw() {
+  std::cout << "Its a draw!" << std::endl << std::endl;
+}
+
 void View::printBye() {
   std::cout << "Thanks, bye!" << std::endl << std::endl;
 }
