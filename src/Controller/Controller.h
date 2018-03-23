@@ -29,6 +29,7 @@ public:
   void run();
   void dealFirstTwoCards();
   void playersTurn();
+  void cpuTurn();
   bool isBust(Hand<FrenchFace, FrenchSuite> h);
 
 private:

@@ -9,8 +9,13 @@
 
 class View {
 public:
-  void showHand(Hand<FrenchFace, FrenchSuite> h);
+  void showHand(Hand<FrenchFace, FrenchSuite> h, std::string s);
   bool askPlayerTwistOrStick();
+  bool askPlayAgain();
   void printBust();
+  void printBanksTurn();
+  void printPlayerWon();
+  void printBankWon();
+  void printBye();
 };
 #endif

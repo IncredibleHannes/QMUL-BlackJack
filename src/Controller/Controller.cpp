@@ -6,14 +6,27 @@ Controller::Controller()
 
 void Controller::run(){
   while (true) {
+    //game initialisation
     this->deck = Deck<FrenchFace, FrenchSuite>();
     this->deck.shuffle();
+    this->playerHand.clearHand();
+    this->cpuHand.clearHand();
+
+
     this->dealFirstTwoCards();
 
-    this->view.showHand(this->playerHand);
+    this->view.showHand(this->playerHand, "your");
     this->playersTurn();
+    if (this->isBust(this->playerHand)){
+      this->view.printBankWon();
+    } else {
+      this->cpuTurn();
+    }
 
-    break;
+    if (! this->view.askPlayAgain()) {
+      this->view.printBye();
+      break;
+    }
   }
 }
 
@@ -30,13 +43,32 @@ void Controller::playersTurn() {
   while(view.askPlayerTwistOrStick()) {
     this->playerHand.addCard(this->deck.getTop());
     this->deck.popTop();
-    this->view.showHand(this->playerHand);
+    this->view.showHand(this->playerHand, "your");
     if (isBust(this->playerHand)){
       view.printBust();
       return;
     } else if (playerHand.getSize() >= 5){
       return;
     }
+  }
+}
+
+void Controller::cpuTurn() {
+  while(cpuHand.getValue() < playerHand.getValue() && cpuHand.getSize() < 5) {
+    this->view.printBanksTurn();
+    this->cpuHand.addCard(this->deck.getTop());
+    this->deck.popTop();
+    this->view.showHand(this->cpuHand, "banks");
+    if (isBust(this->cpuHand)) {
+      view.printBust();
+      view.printPlayerWon();
+      return;
+    }
+  }
+  if (cpuHand.getValue() < playerHand.getValue()) {
+    this->view.printPlayerWon();
+  } else {
+    this->view.printBankWon();
   }
 }
 
