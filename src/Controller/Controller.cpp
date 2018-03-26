@@ -72,6 +72,7 @@ void Controller::cpuTurn() {
   }
   if (cpuHand.getValue() < playerHand.getValue()) {
     this->view.printPlayerWon();
+    this->logger.logPlayerWon();
   } else if(cpuHand.getValue() == playerHand.getValue()) {
     if (cpuHand.getSize() < playerHand.getSize()) {
       this->view.printBankWon();

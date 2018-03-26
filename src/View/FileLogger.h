@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <vector>
+#include <ctime>
+#include <fstream>
 
 class FileLogger {
 private:
@@ -10,6 +12,9 @@ private:
   std::string endTime = "";
   std::string filename = "";
   std::vector<std::string> gameResults = {};
+  int getWon();
+  int getLost();
+  int getDraw();
 
 public:
   FileLogger() = default;

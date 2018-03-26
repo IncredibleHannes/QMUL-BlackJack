@@ -1,5 +1,5 @@
 #include "FileLogger.h"
-#include <ctime>
+
 
 void FileLogger::logStartTime() {
   time_t rawtime;
@@ -59,7 +59,48 @@ void FileLogger::logDraw() {
 };
 
 void FileLogger::writeLogFile() {
+  std::ofstream myStream("./" + this->filename);
+  if(!myStream.is_open())
+    return;
+
+  myStream << "Game started at: " << this->startTime << std::endl;
+  myStream << "Game finished at: " << this->endTime << std::endl;
+  myStream << "Rounds: " << this->gameResults.size() << std::endl;
+  myStream << "Won: " << this->getWon() << std::endl;
+  myStream << "Lost: " << this->getLost() << std::endl;
+  myStream << "Draw: " << this->getDraw() << std::endl;
+
+  myStream << "--" << std::endl;
+
   for (std::string s : gameResults) {
-    std::cout << s << std::endl;
+    myStream << s << std::endl;
   }
+  myStream.close();
 };
+
+int FileLogger::getWon() {
+  int x = 0;
+  for (std::string s : gameResults) {
+    if (s.find("won") != std::string::npos)
+      x ++;
+  }
+  return x;
+}
+
+int FileLogger::getLost() {
+  int x = 0;
+  for (std::string s : gameResults) {
+    if (s.find("lost") != std::string::npos)
+      x ++;
+  }
+  return x;
+}
+
+int FileLogger::getDraw() {
+  int x = 0;
+  for (std::string s : gameResults) {
+    if (s.find("draw") != std::string::npos)
+      x ++;
+  }
+  return x;
+}
