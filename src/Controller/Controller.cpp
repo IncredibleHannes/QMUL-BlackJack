@@ -4,7 +4,8 @@ Controller::Controller()
   : view(View()), playerHand(Hand<FrenchFace, FrenchSuite>(5)),
     cpuHand(Hand<FrenchFace, FrenchSuite>(5)), deck(Deck<FrenchFace, FrenchSuite>()) {};
 
-void Controller::run(){
+void Controller::run() {
+  this->logger.logStartTime();
   while (true) {
     //game initialisation
     this->deck.clear();
@@ -19,6 +20,7 @@ void Controller::run(){
     this->playersTurn();
     if (this->isBust(this->playerHand)){
       this->view.printBankWon();
+      this->logger.logBankWon();
     } else {
       this->cpuTurn();
     }
@@ -28,6 +30,8 @@ void Controller::run(){
       break;
     }
   }
+  this->logger.logEndTime();
+  this->logger.writeLogFile();
 }
 
 void Controller::dealFirstTwoCards() {
@@ -60,23 +64,28 @@ void Controller::cpuTurn() {
     this->deck.popTop();
     this->view.showHand(this->cpuHand, "banks");
     if (isBust(this->cpuHand)) {
-      view.printBust();
-      view.printPlayerWon();
+      this->view.printBust();
+      this->view.printPlayerWon();
+      this->logger.logPlayerWon();
       return;
     }
   }
   if (cpuHand.getValue() < playerHand.getValue()) {
     this->view.printPlayerWon();
   } else if(cpuHand.getValue() == playerHand.getValue()) {
-    if (cpuHand.getSize() > playerHand.getSize()) {
+    if (cpuHand.getSize() < playerHand.getSize()) {
       this->view.printBankWon();
+      this->logger.logBankWon();
     } else if (cpuHand.getSize() == playerHand.getSize()) {
       this->view.printDraw();
+      this->logger.logDraw();
     } else {
       this->view.printPlayerWon();
+      this->logger.logPlayerWon();
     }
   } else {
     this->view.printBankWon();
+    this->logger.logBankWon();
   }
 }
 

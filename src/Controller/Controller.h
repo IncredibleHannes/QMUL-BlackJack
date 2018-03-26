@@ -19,6 +19,7 @@
 #include "FrenchFace.h"
 #include "FrenchSuite.h"
 #include "View.h"
+#include "FileLogger.h"
 
 class Controller {
 public:
@@ -34,6 +35,7 @@ public:
 
 private:
   View view;
+  FileLogger logger;
   Hand<FrenchFace, FrenchSuite> playerHand;
   Hand<FrenchFace, FrenchSuite> cpuHand;
   Deck<FrenchFace, FrenchSuite> deck;
