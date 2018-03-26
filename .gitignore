@@ -3,6 +3,8 @@ build
 # Prerequisites
 *.d
 
+*.txt
+
 # Compiled Object files
 *.slo
 *.lo
