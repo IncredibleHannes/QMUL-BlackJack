@@ -12,7 +12,14 @@ static_assert(std::is_base_of<CardProperty, SUITE>::value, "SUITE parameter not 
 private:
   std::vector<CardBase*> cards;
 public:
+
   Deck() {
+    this->setupDeck();
+  }
+
+  ~Deck() {cards.clear();};
+
+  virtual void setupDeck() {
     Card<FACE,SUITE> firstCard = Card<FACE,SUITE>();
     Card<FACE,SUITE> tmpCard = Card<FACE,SUITE>(firstCard);
     do {
@@ -25,7 +32,10 @@ public:
     } while(firstCard != tmpCard);
   }
 
-  ~Deck() {};
+  void clear()  {
+    this->cards.clear();
+    this->setupDeck();
+  }
 
   void shuffle(std::shared_ptr<ShuffleAlgorithm> a = std::make_shared<DefaultAlgorithm>()) {
       a->shuffle(this->cards);

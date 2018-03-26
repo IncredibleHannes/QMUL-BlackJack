@@ -7,7 +7,7 @@ Controller::Controller()
 void Controller::run(){
   while (true) {
     //game initialisation
-    this->deck = Deck<FrenchFace, FrenchSuite>();
+    this->deck.clear();
     this->deck.shuffle();
     this->playerHand.clearHand();
     this->cpuHand.clearHand();
