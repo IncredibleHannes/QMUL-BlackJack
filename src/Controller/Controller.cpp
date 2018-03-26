@@ -2,7 +2,7 @@
 
 Controller::Controller()
   : view(View()), playerHand(Hand<FrenchFace, FrenchSuite>(5)),
-    cpuHand(Hand<FrenchFace, FrenchSuite>(5)), deck(Deck<FrenchFace, FrenchSuite>()) {};
+    cpuHand(Hand<FrenchFace, FrenchSuite>(5)) {};
 
 void Controller::run() {
   this->logger.logStartTime();

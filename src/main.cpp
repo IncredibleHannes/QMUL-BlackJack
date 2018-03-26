@@ -3,7 +3,7 @@
 #include "Controller.h"
 
 int main(int argc, char const *argv[]) {
-  Controller c = Controller();
+  Controller c;
   c.run();
   return 0;
 }

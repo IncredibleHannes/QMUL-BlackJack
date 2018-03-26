@@ -8,6 +8,6 @@
 class ShuffleAlgorithm {
 public:
   ShuffleAlgorithm() = default;
-  virtual void shuffle(std::vector<CardBase*> &cards) = 0;
+  virtual void shuffle(std::vector<std::unique_ptr<CardBase>> &cards) = 0;
 };
 #endif

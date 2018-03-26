@@ -2,6 +2,7 @@
 #define DECK_H_
 
 #include <vector>
+#include <memory>
 #include "DefaultAlgorithm.h"
 #include "Card.h"
 
@@ -10,14 +11,17 @@ class Deck {
 static_assert(std::is_base_of<CardProperty, FACE>::value, "FACE parameter not derived from Face");
 static_assert(std::is_base_of<CardProperty, SUITE>::value, "SUITE parameter not derived from Suite");
 private:
-  std::vector<CardBase*> cards;
+  std::vector<std::unique_ptr<CardBase>> cards;
 public:
 
   Deck() {
     this->setupDeck();
   }
 
-  ~Deck() {cards.clear();};
+  ~Deck() {
+    cards.clear();
+  };
+  Deck(const Deck&) = delete;
 
   virtual void setupDeck() {
     Card<FACE,SUITE> firstCard = Card<FACE,SUITE>();
@@ -26,7 +30,7 @@ public:
       Card<FACE,SUITE> tmpCard2 = Card<FACE,SUITE>(tmpCard);
       do {
         tmpCard.incFace();
-        this->cards.push_back(static_cast<CardBase*>(new Card<FACE,SUITE>(tmpCard)));
+        this->cards.push_back(std::unique_ptr<CardBase>(new Card<FACE,SUITE>(tmpCard)));
       } while(tmpCard != tmpCard2);
       tmpCard.incSuite();
     } while(firstCard != tmpCard);
@@ -41,14 +45,11 @@ public:
       a->shuffle(this->cards);
   };
 
-  std::vector<CardBase*> getCards() { return this->cards; };
-
   Card<FACE,SUITE> getTop() {
-    return *static_cast<Card<FACE, SUITE>*>(cards.at(cards.size()-1));
+    return *static_cast<Card<FACE,SUITE>*>(cards.at(cards.size()-1).get());
   };
 
   void popTop() {
-    delete cards.at(cards.size()-1);
     cards.pop_back();
   }
 

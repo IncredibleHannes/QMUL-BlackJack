@@ -6,7 +6,7 @@
 class DefaultAlgorithm : public ShuffleAlgorithm {
 public:
   DefaultAlgorithm() = default;
-  virtual void shuffle(std::vector<CardBase*> &cards);
+  virtual void shuffle(std::vector<std::unique_ptr<CardBase>> &cards);
 private:
   int NUM_OF_ITERATION = 100;
 };
