@@ -1,7 +1,7 @@
 #include "Controller.h"
 
 Controller::Controller()
-  : view(View()), playerHand(Hand<FrenchFace, FrenchSuite>(5)),
+  : playerHand(Hand<FrenchFace, FrenchSuite>(5)),
     cpuHand(Hand<FrenchFace, FrenchSuite>(5)) {};
 
 void Controller::run() {
@@ -22,6 +22,7 @@ void Controller::run() {
       this->view.printBankWon();
       this->logger.logBankWon();
     } else {
+      this->view.showHand(this->cpuHand, "banks");
       this->cpuTurn();
     }
 
