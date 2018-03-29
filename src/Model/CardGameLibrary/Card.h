@@ -1,8 +1,8 @@
 /**
     <h1>Card</h1>
     <h3>Card.cpp</h3><br>
-    This class is representing a card of a standard french set of cards
-
+    This class is representing a card. It is generically generated and works with
+    every face and suite that are subclass of CardProperty.
 
     @author Johannes Hartmann
     @version 1.0
@@ -24,20 +24,34 @@ class Card : public CardBase {
 static_assert(std::is_base_of<CardProperty, FACE>::value, "FACE parameter not derived from Face");
 static_assert(std::is_base_of<CardProperty, SUITE>::value, "SUITE parameter not derived from Suite");
 public:
+
+  /**
+   * constructor initialises a card with the lowest face and suite value
+   */
   Card()
     : face(FACE()), suite(SUITE()) { };
-
-  Card(FACE f, SUITE s)
-  : face(f), suite(s) { };
-
-  Card(const Card<FACE,SUITE> &other)
-    : face(other.face), suite(other.suite) { };
-
+  /**
+   * getter fot the face field
+   * @return face of the card
+   */
   FACE getFace() { return this->face; };
+  /**
+   * getter fot the suite field
+   * @return suite of the card
+   */
   SUITE getSuite() { return this->suite; };
-
+  /**
+   * increments the face of the card.
+   */
   void incFace() { face.inc(); };
+  /**
+   * increments the suite of the card.
+   */
   void incSuite() { suite.inc(); };
+  /**
+   * overloaded not equal operator. A card is not equal anothar card if face and
+   * suite are not equal
+   */
   bool operator!=(const Card& toCompare) const {
     return !(this->face == toCompare.face && this->suite == toCompare.suite);
   };

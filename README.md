@@ -8,7 +8,8 @@ just run the following command. It deletes eventually excisting old compiled cod
 make clean && make
 ```
 *Note: Make sure you have the latest gcc compiler version installed to compile
-the code*
+the code. This project is defeloped on an Ubuntu Linux system and only tested
+on linux systems.*
 
 ## How to execute
 To start the game, simply execute the following command in your teriminal at the

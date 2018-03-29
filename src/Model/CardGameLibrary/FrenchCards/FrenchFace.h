@@ -1,3 +1,13 @@
+/**
+    <h1>FrenchSuite</h1>
+    <h3>FrenchSuite.cpp</h3><br>
+    This class is representing the face of a standard french card set.
+    There are numbers from 2-10 and Jack, Queen and King
+
+    @author Johannes Hartmann
+    @version 1.0
+*/
+
 #ifndef FRENCHFACE_H_
 #define FRENCHFACE_H_
 
